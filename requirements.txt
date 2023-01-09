@@ -3,3 +3,4 @@ imbox==0.9.8
 gunicorn==20.1.0
 httptools==0.4.0
 uvicorn==0.17.6
+names==0.3.0
