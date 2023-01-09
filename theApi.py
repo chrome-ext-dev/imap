@@ -32,8 +32,9 @@ def getEmail(email):
                             # print(message.body)
                             time.sleep(2)
                             code = message.body['plain'][0]
-                            final_code = find_between( code, 'following URL in your browser: ', '2010')
-                            final_code = final_code + '2010'
+                            print(code)
+                            final_code = find_between( code, 'following URL in your browser: ', 'Pinterest')
+                            final_code = final_code.rstrip()
                             return final_code
             
             if (code != ''):
