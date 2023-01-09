@@ -1,4 +1,5 @@
 import time
+import names
 from imbox import Imbox
 
 def find_between( s, first, last ):
@@ -48,3 +49,14 @@ def getEmail(email):
                 return False
             continue
         return True
+
+def randomUser(gender):
+    full_name = names.get_full_name(gender=gender)
+    full_name_arr = full_name.split()
+
+    user = {
+        'fullname' : full_name,
+        'firstname' : full_name_arr[0],
+        'lastname' : full_name_arr[1]
+    }
+    return user
